@@ -1,0 +1,71 @@
+
+#main {
+  border: 1px solid tomato;
+  min-height: 99vh;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border: 1px solid royalblue;
+}
+
+#wrapper>header {
+  flex: 0 0 100%;
+  text-align: center;
+  vertical-align: middle;
+  min-height: 8vh;
+  background-color: sandybrown;
+}
+p { color: black; line-height: 1em; }
+#wrapper>footer {
+  flex: 0 0 100%;
+  text-align: center;
+
+  background-color: sandybrown;
+}
+
+#wrapper>div {
+  margin: 10px;
+  padding: 20px;
+  /* To center the text vertically. */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  /*Styles for sample presentation*/
+  border: 1px solid maroon;
+  text-align: justify;
+}
+
+#text-static {
+  /*Low flex basis values to keep it next to each other divs*/
+  flex: 1 0 30%;
+}
+
+#wrapper>div#text-json {
+  /*Low flex basis values to keep it next to each other divs*/
+  flex: 0 0 25%;
+  margin-left: 0;
+  max-height: 100vh;
+  max-width: 25%;
+  overflow: auto;
+}
+
+.news-app {
+  display: flex;
+  justify-content: center;
+}
+
+.news-item {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid;
+  margin-bottom: 20px;
+}
+
+.news-img {
+  /* width: 400px; */
+}
